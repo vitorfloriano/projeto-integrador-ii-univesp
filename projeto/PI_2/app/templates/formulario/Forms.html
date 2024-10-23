@@ -1,11 +1,19 @@
 {% extends 'Universal.html' %}
 {% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
 {% block conteudo %}
     
     <title>Formulário</title>
 
-    <link rel="stylesheet" href="{% static 'css/FormsCSS.css'%}">
-    <link rel="stylesheet" href="{% static 'Modos/Claro/ClaroForms.css'%}" id="temas">
+    <link rel="stylesheet" href="{%static 'css/FormsCSS.css'%}">
+    <link rel="stylesheet" href="{%static 'Modos/Claro/ClaroForms.css'%}" id="temas">
 
 <!-- Modo Escuro/claro -->
 
@@ -16,7 +24,7 @@
     const tema = document.querySelector("#temas");
     botao.addEventListener("click", function() {
         if (tema.getAttribute("href") == "{%static 'Modos/Claro/ClaroForms.css'%}") {
-            tema.href = "{% static 'Modos/Escuro/EscuroForms.css'%}";
+            tema.href = "{%static 'Modos/Escuro/EscuroForms.css'%}";
         } else {
             tema.href = "{%static 'Modos/Claro/ClaroForms.css'%}";
         }

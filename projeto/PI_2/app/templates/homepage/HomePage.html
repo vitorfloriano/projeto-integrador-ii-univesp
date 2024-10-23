@@ -1,6 +1,13 @@
 {% extends 'Universal.html' %}
 {% load static %}
 
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
 {% block conteudo %}
     
     <title>Pagina Inicial</title>
@@ -17,9 +24,9 @@
     const tema = document.querySelector("#temas");
     botao.addEventListener("click", function() {
         if (tema.getAttribute("href") == "{% static 'Modos/Claro/ClaroHome.css'%}") {
-            tema.href = "{% static 'Modos/EscuroEscuroHome.css/'%}";
+            tema.href = "{%static 'Modos/Escuro/EscuroHome.css'%}";
         } else {
-            tema.href = "{% static 'Modos/Claro/ClaroHome.css'%}";
+            tema.href = "{%static 'Modos/Claro/ClaroHome.css'%}";
         }
     });
     </script>

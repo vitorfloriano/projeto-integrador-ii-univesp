@@ -18,9 +18,13 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('AutoItaAdmin/', admin.site.urls),
     path('', include ('app.urls')),
     path('Forms', include ('app.urls')),
     path('Contato', include ('app.urls')),
     path('HomePage', include ('app.urls'))
 ]
+
+admin.site.site_title = "Administração AutoIta"
+admin.site.site_header = "Administração"
+admin.site.index_title = "Banco de Dados"
