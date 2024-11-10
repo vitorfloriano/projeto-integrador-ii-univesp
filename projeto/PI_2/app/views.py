@@ -6,5 +6,3 @@ def contatos(request):
     return render(request, 'contatos/Contato.html')
 def form(request):
     return render(request, 'formulario/Forms.html')
-
-# Create your views here.

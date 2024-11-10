@@ -4,5 +4,3 @@ from .models import *
 admin.site.register(geral)
 admin.site.register(empresa2)
 admin.site.register(empresa3)
-
-# Register your models here.
