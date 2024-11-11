@@ -2,6 +2,10 @@
 venv/
 venv/*.*
 
+.projeto/
+projeto/
+projeto/*.*
+
 .__pycache__/
 __pycache__/
 __pycache__/*.*
