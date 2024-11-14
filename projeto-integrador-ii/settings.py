@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-+zglft@z!+am97cu$u96@oen+$o&%(05px)qq#e#^-hnu5xp#^'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['projeto-integrador-ii-441622.rj.r.appspot.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
@@ -53,12 +53,12 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'PI_2.urls'
+ROOT_URLCONF = 'projeto-integrador-ii.urls'
 
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['app/templates'],
+        'DIRS': [BASE_DIR / 'app' / 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -71,7 +71,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'PI_2.wsgi.application'
+WSGI_APPLICATION = 'projeto-integrador-ii.wsgi.application'
 
 
 # Database
@@ -83,17 +83,6 @@ WSGI_APPLICATION = 'PI_2.wsgi.application'
 #        'NAME': BASE_DIR / 'db.sqlite3',
 #    }
 # }
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'dbpi',
-        'USER': 'postgres',
-        'PASSWORD': 'avocado123',
-        'HOST': 'localhost',  # Replace with your PostgreSQL server's address if necessary
-        'PORT': '',          # Leave empty to use the default PostgreSQL port (usually 5432)
-    }
-}
 
 
 # Password validation

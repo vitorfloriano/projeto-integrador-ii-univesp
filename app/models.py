@@ -10,7 +10,6 @@ class geral(models.Model):
     RG = models.CharField(max_length=12)
     admissao = models.CharField(max_length=10)
     cargo = models.CharField(max_length=80)
-    salario = models.CharField()
 
     def __str__(self):
         return self.nome
@@ -25,7 +24,6 @@ class empresa2(models.Model):
     RG = models.CharField(max_length=12)
     admissao = models.CharField(max_length=10)
     cargo = models.CharField(max_length=80)
-    salario = models.CharField()
     
     def __str__(self):
         return self.nome
@@ -40,7 +38,6 @@ class empresa3(models.Model):
     RG = models.CharField(max_length=12)
     admissao = models.CharField(max_length=10)
     cargo = models.CharField(max_length=80)
-    salario = models.CharField()
 
     def __str__(self):
         return self.nome

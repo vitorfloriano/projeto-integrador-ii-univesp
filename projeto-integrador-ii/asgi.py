@@ -8,9 +8,9 @@ https://docs.djangoproject.com/en/5.1/howto/deployment/asgi/
 """
 
 import os
-
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'PI_2.settings')
+# Update this line to match the new structure
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'projeto-integrador-ii.settings')
 
 application = get_asgi_application()

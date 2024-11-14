@@ -1,0 +1,16 @@
+runtime: python310  # Adjust if using a different Python version
+
+entrypoint: gunicorn -b :$PORT projeto-integrador-ii.wsgi  # Updated entrypoint to match new folder structure
+
+instance_class: F2  # Optional instance class for flexibility
+
+env_variables:
+  DJANGO_SETTINGS_MODULE: "projeto-integrador-ii.settings"  # Updated settings module to match new folder structure
+
+# Optional handler for static files
+handlers:
+  - url: /static
+    static_dir: static/
+
+  - url: /.*  # Matches everything else, should be handled by Django
+    script: auto

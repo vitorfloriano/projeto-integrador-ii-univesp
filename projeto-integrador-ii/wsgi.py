@@ -8,9 +8,9 @@ https://docs.djangoproject.com/en/5.1/howto/deployment/wsgi/
 """
 
 import os
-
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'PI_2.settings')
+# Update this line to match the new structure
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'projeto-integrador-ii.settings')
 
 application = get_wsgi_application()
